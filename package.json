@@ -1,0 +1,38 @@
+{
+  "name": "alfred-httpstat",
+  "version": "0.0.1",
+  "description": "httpstat visualizes ",
+  "license": "MIT",
+  "repository": "leozhang2018/alfred-httpstat",
+  "author": {
+    "name": "leozhang2018",
+    "email": "leozhang2018@gmail.com",
+    "url": "code.leozhang2018.me"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  }
+}
