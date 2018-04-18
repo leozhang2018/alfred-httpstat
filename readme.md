@@ -14,7 +14,7 @@ $ npm install --global alfred-httpstat
 
 ## Usage
 
-In Alfred, type `httpstat`, <kbd>Enter</kbd>, and your query.
+In Alfred, type `hs`, <kbd>Enter</kbd>, and your URL query.
 
 
 ## License
