@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>httpstat</string>
 	<key>bundleid</key>
 	<string>leozhang2018.code.httpstat</string>
 	<key>category</key>
@@ -11,53 +9,29 @@
 	<key>connections</key>
 	<dict>
 		<key>65F9AB9B-057F-4F2A-B568-F2B99C534F84</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D46D17A1-4FC4-4158-AC4D-F98E6717B5B4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 	</dict>
 	<key>disabled</key>
 	<false/>
+	<key>name</key>
+	<string>httpstat</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>D46D17A1-4FC4-4158-AC4D-F98E6717B5B4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>httpstat</string>
+				<string>hs</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -77,7 +51,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>httpstat visualizes </string>
+				<string>httpstat visualizes</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -95,13 +69,6 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>D46D17A1-4FC4-4158-AC4D-F98E6717B5B4</key>
-		<dict>
-			<key>xpos</key>
-			<integer>150</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
 		<key>65F9AB9B-057F-4F2A-B568-F2B99C534F84</key>
 		<dict>
 			<key>xpos</key>

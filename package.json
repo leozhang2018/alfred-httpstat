@@ -1,6 +1,6 @@
 {
   "name": "alfred-httpstat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "httpstat visualizes ",
   "license": "MIT",
   "repository": "leozhang2018/alfred-httpstat",
