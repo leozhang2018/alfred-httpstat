@@ -4,7 +4,7 @@
 
 > [Alfred 3](https://www.alfredapp.com) httpstat visualizes 
 
-<img src="screenshot.jpg" width="640"><img>
+<img src="screenshot.jpg" width="640"></img>
 
 ## Install
 
