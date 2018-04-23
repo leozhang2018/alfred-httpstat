@@ -17,7 +17,7 @@ if (isUrl(alfy.input)) {
 	let onTotal = begin; // diff begin - end
 	let body = '';
 	let ip = '';
-	
+
 	dns.lookup(url.host, (err, address, family) => {
 		ip = address;
 	});
@@ -113,4 +113,11 @@ if (isUrl(alfy.input)) {
 		]);
 	});
 	req.end();
+} else {
+	alfy.output([
+		{
+			title: 'Parse URL Formate Error',
+			subtitle: 'Please check the URL formate'
+		}
+	]);
 }
