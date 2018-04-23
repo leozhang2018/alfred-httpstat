@@ -54,6 +54,10 @@ const req = protocol.request(url, res => {
 				{
 					title: 'Total',
 					subtitle: onTotal - begin + 'ms'
+				},
+				{
+					title: 'Headers',
+					subtitle: `HTTP/${res.httpVersion} ${res.statusCode} ${res.statusMessage} ${res.headers.server} ${res.headers.date}`
 				}
 			]);
 		} else if (url.protocol === 'http:') {
@@ -77,6 +81,10 @@ const req = protocol.request(url, res => {
 				{
 					title: 'Total',
 					subtitle: onTotal - begin + 'ms'
+				},
+				{
+					title: 'Headers',
+					subtitle: `HTTP/${res.httpVersion} ${res.statusCode} ${res.statusMessage} ${res.headers.server} ${res.headers.date}`
 				}
 			]);
 		}
