@@ -1,5 +1,5 @@
 'use strict';
-const isUrl = require('./utils/is_url.js');
+const isUrl = require('is-url');
 const alfy = require('alfy');
 const http = require('http');
 const https = require('https');
