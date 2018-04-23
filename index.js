@@ -3,16 +3,22 @@ const alfy = require('alfy');
 const http = require('http');
 const https = require('https');
 const parse = require('url').parse;
+const dns = require('dns');
 
 let url = parse(alfy.input);
 let protocol = url.protocol === 'https:' ? https : http;
-var begin = Date.now();
-var onLookup = begin; // diff begin - dns resolve
-var onConnect = begin; // diff dns resolve - connect
-var onSecureConnect = begin; // diff connect - secureConnect
-var onTransfer = begin; // diff connect - transfer
-var onTotal = begin; // diff begin - end
-var body = '';
+let begin = Date.now();
+let onLookup = begin; // diff begin - dns resolve
+let onConnect = begin; // diff dns resolve - connect
+let onSecureConnect = begin; // diff connect - secureConnect
+let onTransfer = begin; // diff connect - transfer
+let onTotal = begin; // diff begin - end
+let body = '';
+let ip = '';
+
+dns.lookup(url.host, (err, address, family) => {
+	ip = address;
+});
 const req = protocol.request(url, res => {
 	res.once('readable', () => {
 		onTransfer = Date.now();
@@ -27,7 +33,7 @@ const req = protocol.request(url, res => {
 			alfy.output([
 				{
 					title: 'DNS Lookup',
-					subtitle: onLookup - begin + 'ms'
+					subtitle: onLookup - begin + 'ms' + ` IP: ${ip}`
 				},
 				{
 					title: 'TCP Connection',
@@ -54,7 +60,7 @@ const req = protocol.request(url, res => {
 			alfy.output([
 				{
 					title: 'DNS Lookup',
-					subtitle: onLookup - begin + 'ms'
+					subtitle: onLookup - begin + 'ms' + ` IP: ${ip}`
 				},
 				{
 					title: 'TCP Connection',
