@@ -28,12 +28,12 @@
     "alfy"
   ],
   "dependencies": {
-    "alfy": "^0.6.0",
+    "alfy": "^0.8.0",
     "is-url": "^1.2.4"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
-    "ava": "^0.18.0",
-    "xo": "^0.17.0"
+    "ava": "^1.0.1",
+    "xo": "^0.23.0"
   }
 }
