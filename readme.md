@@ -14,8 +14,7 @@ $ npm install --global alfred-httpstat
 
 *Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
 
-#Download workflow file
-[Release](https://github.com/leozhang2018/alfred-httpstat/releases)
+Or download workflow file here [Release](https://github.com/leozhang2018/alfred-httpstat/releases)
 
 ## Usage
 
